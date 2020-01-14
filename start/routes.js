@@ -26,6 +26,7 @@ Route.post('/posts', 'PostController.store')
 Route.put('/posts/:id', 'PostController.update')
 Route.delete('/posts/:id', 'PostController.destroy')
 
+Route.any('*', () => '404 Not Found')
 // Route.on('/home').render('home')
 // Route.get('/test/:id', ({
 //   params
